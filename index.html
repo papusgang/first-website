@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Website with A-Frame: Space Rocket</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Space Rocket -->
+    <a-entity position="0 0 -5">
+      <!-- Rocket Body -->
+      <a-cylinder height="4" radius="0.5" color="#808080"></a-cylinder>
+      <!-- Rocket Nose -->
+      <a-cone position="0 2 -0.5" height="1" radius-bottom="0.5" radius-top="0.1" color="#FF0000"></a-cone>
+      <!-- Rocket Fins -->
+      <a-box position="0.5 -1.5 -0.5" width="0.1" height="1" depth="0.5" color="#FF0000"></a-box>
+      <a-box position="-0.5 -1.5 -0.5" width="0.1" height="1" depth="0.5" color="#FF0000"></a-box>
+      <a-box position="0 -1.5 0.5" width="0.5" height="1" depth="0.1" color="#FF0000"></a-box>
+    </a-entity>
+    
+    <!-- Sky -->
+    <a-sky color="#000"></a-sky>
+    
+    <!-- Camera -->
+    <a-entity camera look-controls position="0 0 10"></a-entity>
+  </a-scene>
+</body>
+</html>
